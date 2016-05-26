@@ -12,5 +12,5 @@ for ts, buf in pcap:
     eth = dpkt.ethernet.Ethernet(buf)
     ip = eth.data
     tcp = ip.data
-    print socket.inet_ntoa(ip.src)
-    print tcp.win
+    if socket.inet_ntoa(ip.src) == "10.0.0.3":
+        print(tcp.win)
