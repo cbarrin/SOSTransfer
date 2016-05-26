@@ -5,8 +5,8 @@
 import dpkt
 import socket
 
-import plotly.plotly as py
-import plotly.graph_objs as go
+#import plotly.plotly as py
+#import plotly.graph_objs as go
 
 f = open('test.pcap')
 pcap = dpkt.pcap.Reader(f)
